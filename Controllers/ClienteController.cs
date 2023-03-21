@@ -7,10 +7,10 @@ namespace PrimeiraApi.Controllers
     //[Route("[controller]")] pega o nome da controller de forma dinâmica
     public class ClienteController : Controller
     {
-        [HttpGet("path")]
-        public string Get()
+        [HttpGet]
+        public ActionResult<string> Get()
         {
-            return "Vitor";
+            return Ok("Vitor");
         }
     }
 }
